@@ -1,0 +1,41 @@
+﻿c10t_path: 'C:\Program Files\c10t\c10t.exe'
+maps:
+  - connection:
+      type: ftp
+      address: 'ftp.myminecraftserver.net'
+      username: 'myusername'
+      password: 'myapssword'
+      worldsFolder: '/'
+    webConnection:
+      type: ftp
+      address: 'ftp.mywebserver.com'
+      username: 'myusername'
+      password: 'mypassword'
+      imagesFolder: '/minecraft/maps'
+    world:
+      name: world
+      regions:
+        - selection: -5,5,-5,5
+          images:   
+            - output: 'metropolis_day.png'
+              night: false
+              cave: false
+            - output: 'metropolis_night.png'
+              night: true
+              cave: false
+            - output: 'metropolis_iso_day.png'
+              type: fatiso
+              night: false
+              cave: false
+            - output: 'metropolis_iso_night.png'
+              type: fatiso
+              night: true
+              cave: false
+            - output: 'metropolis_iso_cave_day.png'
+              type: fatiso
+              night: false
+              cave: true
+            - output: 'metropolis_iso_cave_night.png' 
+              type: fatiso
+              night: true
+              cave: true
